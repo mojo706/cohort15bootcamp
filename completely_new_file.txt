@@ -1,0 +1,2 @@
+This is a new file just for kicks to show that git keep track of everything inside the folder it was
+initialized in
