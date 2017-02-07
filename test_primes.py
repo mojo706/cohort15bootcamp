@@ -22,16 +22,16 @@ class TestPrimeNumber(unittest.TestCase):
         firstPrime = result[0]
         self.assertEqual(firstPrime, 2)
 
-    def test_is_four_non_prime(self):
-        """Is four correctly determined not to be prime?"""
-        result = []
-        if (sieve[i] === 4):
-            result.append(i)
-        self.assertFalse(result, msg='Four is not prime!')
-    
     def test_is_zero_not_prime(self):
         """Is zero correctly determined not to be prime?"""
-        self.assertFalse(primeGen0(0,0))
+        self.assertFalse(primeGen0(0,0), msg="Zero cannot be prime!")
+
+    def test_if_result_is_within_range(self):
+        """ Is the prime number within range provided? """
+        x = 5
+        range = 0 < x > 10
+        self.assertTrue(primeGo(range), msg="Within Range!")
+
 
 
 if __name__=='__main__':
